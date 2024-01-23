@@ -1,0 +1,368 @@
+@import url("https://fonts.googleapis.com/css2?family=Work+Sans:wght@400;600;700;800&display=swap");
+
+* {
+  font-family: "Work Sans", sans-serif !important;
+}
+@mixin font-style($name, $color, $weight, $size) {
+  .#{$name} {
+    color: $color;
+    font-weight: $weight;
+    font-size: $size;
+  }
+}
+
+// ------------------------------------
+
+.navbar-content:hover {
+  color: #f9995d !important;
+}
+@include font-style(navbar-logo, #2947a9, 700, 30px);
+
+// hero section start
+
+.hero-section {
+  background-image: url("images/hero_section/hero.svg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  height: 90.5vh !important;
+}
+@include font-style(hero-title, black, 600, 42px);
+.hero-section-dialogbox {
+  background-color: #2947a9;
+  width: fit-content;
+  color: white;
+  bottom: 10px;
+}
+@include font-style(dialogbox-title, white, 700, 20px);
+.dialogbox-content {
+  width: 300px;
+  text-align: center;
+  font-weight: 400;
+  font-size: 20px;
+}
+.dialogbox-button {
+  width: 100% !important;
+  height: 40px !important;
+}
+
+// hero-section-end
+
+// reputation section start
+
+@include font-style(sub-heading, #292e3d, 700, 30px);
+.reputation-title {
+  -webkit-text-stroke: black 2px;
+  text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+}
+@include font-style(reputation-heading, black, 600, 18px);
+@include font-style(reputation-content, black, 400, 16px);
+
+.reputation-card {
+  width: 65%;
+}
+// reputation section end
+
+// about us section start
+
+.about-us-section {
+  max-width: 70rem;
+}
+.about-button {
+  color: #2947a9 !important;
+}
+
+.section-content {
+  background-color: #2947a9;
+  color: white;
+}
+@include font-style(content, white, 400, 17.5px);
+
+// about us section end
+
+// services section start
+
+.services {
+  background-color: #f6f8f7;
+}
+.blue-card {
+  background-color: #2947a9 !important;
+  color: white !important;
+  width: 90%;
+  img {
+    padding-left: 10px;
+    border-bottom: 2px solid #e0e3eb;
+  }
+  &:hover {
+    cursor: pointer;
+  }
+}
+.white-card {
+  background-color: white;
+  color: #2947a9 !important;
+  width: 90%;
+  img {
+    padding-left: 10px;
+    border-bottom: 2px solid #e0e3eb;
+  }
+  &:hover {
+    cursor: pointer;
+  }
+}
+@include font-style(card-title, black, 600, 20px);
+
+// services section end
+
+// experience section start
+
+.experience-section h5 {
+  font-weight: 700;
+  font-size: 60px;
+}
+.experience-section span {
+  font-weight: 400;
+  font-size: 20px;
+  // font-size: min(20px, 2.25vw);
+  padding-left: 10px;
+  border-left: 3px solid #f9995d;
+  margin-left: 10px;
+}
+.experience-content > h3 {
+  font-weight: 700;
+  font-size: 48px;
+  color: #2947a9;
+}
+.experience-content > p {
+  width: 100%;
+  font-weight: 400;
+  font-size: 20px;
+  color: #525b7a;
+}
+.blue-button {
+  background-color: #2947a9 !important;
+  width: fit-content;
+}
+.experience-section > div > div {
+  box-shadow: 0px 4px 6px -2px rgba(17, 24, 39, 0.05),
+    0px 12px 16px -4px rgba(17, 24, 39, 0.1);
+}
+// experience section end
+
+// advertisment section start
+
+.advertisment-section {
+  background-image: url("./images/ads/advertisment.svg");
+  height: 40vh;
+}
+.advertisment-button {
+  background-color: transparent !important;
+}
+@include font-style(advertisment-heading, white, 700, 24px);
+@include font-style(advertisment-content, white, 400, 20px);
+
+// advertisment section end
+
+// project section start
+.project-content {
+  background-color: #2947a9;
+  h6 {
+    font-weight: 700;
+    font-size: 20px;
+  }
+}
+.project-list > li {
+  color: #c2c7d6;
+  font-weight: bold;
+  font-size: 16px;
+  padding-left: 10px;
+  margin-bottom: 10px;
+  &:hover {
+    color: #2947a9 !important;
+    cursor: pointer;
+  }
+}
+#selected-project {
+  border-left: 2px solid #2947a9;
+  color: #2947a9;
+}
+// project-section end
+
+// form section start
+.form-section {
+  background-color: #f6f8f7 !important;
+}
+.form-content {
+  max-width: 539px;
+  text-align: center;
+}
+.dropdown {
+  height: 32px;
+}
+input,
+textarea,
+select {
+  outline: none;
+  padding-left: 5px;
+}
+textarea {
+  width: 200px;
+}
+.form-feild > div > input {
+  width: 200px;
+}
+// form section end
+
+// bottom section start
+
+.subscribe-button {
+  background-color: #f9995d !important;
+}
+.blue-text {
+  color: #2947a9;
+}
+
+// bottom section end
+
+// footer start
+
+.footer-text {
+  background-color: #2947a9;
+  color: white;
+}
+
+// footer section end
+
+// -------------------------------------------
+
+@media (min-width: 768px) {
+  // hero section start
+
+  @include font-style(hero-title, black, 600, 62px);
+
+  // hero section end
+
+  // experience section start
+
+  .project-completed {
+    left: -80px;
+    top: -50px;
+  }
+
+  .happy-clients {
+    right: -100px;
+    z-index: 5;
+  }
+
+  .awards-win {
+    right: -50px;
+    z-index: 5;
+    top: -70px;
+  }
+
+  .business-years {
+    left: -80px;
+    top: -120px;
+  }
+
+  .project-completed-image {
+    top: -50px;
+    left: -50px;
+  }
+
+  .handshake {
+    top: -25px;
+    right: -30px;
+  }
+
+  .awards {
+    top: -25px;
+    right: -15px;
+  }
+
+  .business-year-image {
+    bottom: -30px;
+    right: -35px;
+  }
+  .experience-content > p {
+    max-width: 280px;
+  }
+  .experience-content > h3 {
+    font-size: 38px;
+  }
+  // form-section start
+
+  // project section start
+
+  .project-list > li {
+    font-size: 22px;
+  }
+
+  // project section end
+
+  textarea {
+    width: 420px;
+  }
+}
+
+// -------------------------------------------
+
+@media (min-width: 992px) {
+  // hero section start
+  @include font-style(hero-title, black, 600, 72px);
+
+  .hero-section-dialogbox {
+    position: absolute;
+  }
+  .dialogbox-content {
+    width: 350px;
+  }
+
+  // hero section end
+
+  // reputation section start
+
+  .reputation-card {
+    width: 25%;
+  }
+  .sub-heading {
+    font-size: 36px;
+  }
+
+  // reputation section end
+
+  // about-us section start
+  .about-image {
+    width: 65%;
+    aspect-ratio: 7/5;
+  }
+
+  .section-content {
+    position: absolute;
+    width: 40%;
+    height: 85%;
+    top: 50%;
+    right: 0;
+    transform: translateY(-50%);
+  }
+
+  // about-us section end
+
+  // experience section start
+
+  .experience-content > h3 {
+    font-size: 60px;
+  }
+
+  // experience section end
+
+  // advertisment sectionn start
+
+  .advertisment-content {
+    font-size: 24px;
+  }
+  .advertisment-heading {
+    font-size: 36px;
+  }
+
+  // advertisment section end
+}

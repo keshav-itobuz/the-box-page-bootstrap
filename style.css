@@ -1,0 +1,352 @@
+@import url("https://fonts.googleapis.com/css2?family=Work+Sans:wght@400;600;700;800&display=swap");
+* {
+  font-family: "Work Sans", sans-serif !important;
+}
+
+.navbar-content:hover {
+  color: #f9995d !important;
+}
+
+.navbar-logo {
+  color: #2947a9;
+  font-weight: 700;
+  font-size: 30px;
+}
+
+.hero-section {
+  background-image: url("images/hero_section/hero.svg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  height: 90.5vh !important;
+}
+
+.hero-title {
+  color: black;
+  font-weight: 600;
+  font-size: 42px;
+}
+
+.hero-section-dialogbox {
+  background-color: #2947a9;
+  width: -moz-fit-content;
+  width: fit-content;
+  color: white;
+  bottom: 10px;
+}
+
+.dialogbox-title {
+  color: white;
+  font-weight: 700;
+  font-size: 20px;
+}
+
+.dialogbox-content {
+  width: 300px;
+  text-align: center;
+  font-weight: 400;
+  font-size: 20px;
+}
+
+.dialogbox-button {
+  width: 100% !important;
+  height: 40px !important;
+}
+
+.sub-heading {
+  color: #292e3d;
+  font-weight: 700;
+  font-size: 30px;
+}
+
+.reputation-title {
+  -webkit-text-stroke: black 2px;
+  text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+}
+
+.reputation-heading {
+  color: black;
+  font-weight: 600;
+  font-size: 18px;
+}
+
+.reputation-content {
+  color: black;
+  font-weight: 400;
+  font-size: 16px;
+}
+
+.reputation-card {
+  width: 65%;
+}
+
+.about-us-section {
+  max-width: 70rem;
+}
+
+.about-button {
+  color: #2947a9 !important;
+}
+
+.section-content {
+  background-color: #2947a9;
+  color: white;
+}
+
+.content {
+  color: white;
+  font-weight: 400;
+  font-size: 17.5px;
+}
+
+.services {
+  background-color: #f6f8f7;
+}
+
+.blue-card {
+  background-color: #2947a9 !important;
+  color: white !important;
+  width: 90%;
+}
+.blue-card img {
+  padding-left: 10px;
+  border-bottom: 2px solid #e0e3eb;
+}
+.blue-card:hover {
+  cursor: pointer;
+}
+
+.white-card {
+  background-color: white;
+  color: #2947a9 !important;
+  width: 90%;
+}
+.white-card img {
+  padding-left: 10px;
+  border-bottom: 2px solid #e0e3eb;
+}
+.white-card:hover {
+  cursor: pointer;
+}
+
+.card-title {
+  color: black;
+  font-weight: 600;
+  font-size: 20px;
+}
+
+.experience-section h5 {
+  font-weight: 700;
+  font-size: 60px;
+}
+
+.experience-section span {
+  font-weight: 400;
+  font-size: 20px;
+  padding-left: 10px;
+  border-left: 3px solid #f9995d;
+  margin-left: 10px;
+}
+
+.experience-content > h3 {
+  font-weight: 700;
+  font-size: 48px;
+  color: #2947a9;
+}
+
+.experience-content > p {
+  width: 100%;
+  font-weight: 400;
+  font-size: 20px;
+  color: #525b7a;
+}
+
+.blue-button {
+  background-color: #2947a9 !important;
+  width: -moz-fit-content;
+  width: fit-content;
+}
+
+.experience-section > div > div {
+  box-shadow: 0px 4px 6px -2px rgba(17, 24, 39, 0.05), 0px 12px 16px -4px rgba(17, 24, 39, 0.1);
+}
+
+.advertisment-section {
+  background-image: url("./images/ads/advertisment.svg");
+  height: 40vh;
+}
+
+.advertisment-button {
+  background-color: transparent !important;
+}
+
+.advertisment-heading {
+  color: white;
+  font-weight: 700;
+  font-size: 24px;
+}
+
+.advertisment-content {
+  color: white;
+  font-weight: 400;
+  font-size: 20px;
+}
+
+.project-content {
+  background-color: #2947a9;
+}
+.project-content h6 {
+  font-weight: 700;
+  font-size: 20px;
+}
+
+.project-list > li {
+  color: #c2c7d6;
+  font-weight: bold;
+  font-size: 16px;
+  padding-left: 10px;
+  margin-bottom: 10px;
+}
+.project-list > li:hover {
+  color: #2947a9 !important;
+  cursor: pointer;
+}
+
+#selected-project {
+  border-left: 2px solid #2947a9;
+  color: #2947a9;
+}
+
+.form-section {
+  background-color: #f6f8f7 !important;
+}
+
+.form-content {
+  max-width: 539px;
+  text-align: center;
+}
+
+.dropdown {
+  height: 32px;
+}
+
+input,
+textarea,
+select {
+  outline: none;
+  padding-left: 5px;
+}
+
+textarea {
+  width: 200px;
+}
+
+.form-feild > div > input {
+  width: 200px;
+}
+
+.subscribe-button {
+  background-color: #f9995d !important;
+}
+
+.blue-text {
+  color: #2947a9;
+}
+
+.footer-text {
+  background-color: #2947a9;
+  color: white;
+}
+
+@media (min-width: 768px) {
+  .hero-title {
+    color: black;
+    font-weight: 600;
+    font-size: 62px;
+  }
+  .project-completed {
+    left: -80px;
+    top: -50px;
+  }
+  .happy-clients {
+    right: -100px;
+    z-index: 5;
+  }
+  .awards-win {
+    right: -50px;
+    z-index: 5;
+    top: -70px;
+  }
+  .business-years {
+    left: -80px;
+    top: -120px;
+  }
+  .project-completed-image {
+    top: -50px;
+    left: -50px;
+  }
+  .handshake {
+    top: -25px;
+    right: -30px;
+  }
+  .awards {
+    top: -25px;
+    right: -15px;
+  }
+  .business-year-image {
+    bottom: -30px;
+    right: -35px;
+  }
+  .experience-content > p {
+    max-width: 280px;
+  }
+  .experience-content > h3 {
+    font-size: 38px;
+  }
+  .project-list > li {
+    font-size: 22px;
+  }
+  textarea {
+    width: 420px;
+  }
+}
+@media (min-width: 992px) {
+  .hero-title {
+    color: black;
+    font-weight: 600;
+    font-size: 72px;
+  }
+  .hero-section-dialogbox {
+    position: absolute;
+  }
+  .dialogbox-content {
+    width: 350px;
+  }
+  .reputation-card {
+    width: 25%;
+  }
+  .sub-heading {
+    font-size: 36px;
+  }
+  .about-image {
+    width: 65%;
+    aspect-ratio: 7/5;
+  }
+  .section-content {
+    position: absolute;
+    width: 40%;
+    height: 85%;
+    top: 50%;
+    right: 0;
+    transform: translateY(-50%);
+  }
+  .experience-content > h3 {
+    font-size: 60px;
+  }
+  .advertisment-content {
+    font-size: 24px;
+  }
+  .advertisment-heading {
+    font-size: 36px;
+  }
+}/*# sourceMappingURL=style.css.map */
