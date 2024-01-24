@@ -2,6 +2,9 @@
 
 * {
   font-family: "Work Sans", sans-serif !important;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 @mixin font-style($name, $color, $weight, $size) {
   .#{$name} {
@@ -32,7 +35,6 @@
   background-color: #2947a9;
   width: fit-content;
   color: white;
-  bottom: 10px;
 }
 @include font-style(dialogbox-title, white, 700, 20px);
 .dialogbox-content {
@@ -59,7 +61,7 @@
 @include font-style(reputation-content, black, 400, 16px);
 
 .reputation-card {
-  width: 65%;
+  width: 80%;
 }
 // reputation section end
 
@@ -127,11 +129,8 @@
   border-left: 3px solid #f9995d;
   margin-left: 10px;
 }
-.experience-content > h3 {
-  font-weight: 700;
-  font-size: 48px;
-  color: #2947a9;
-}
+@include font-style(experience-heading,#2947a9 ,700 ,48px );
+
 .experience-content > p {
   width: 100%;
   font-weight: 400;
@@ -158,16 +157,21 @@
   background-color: transparent !important;
 }
 @include font-style(advertisment-heading, white, 700, 24px);
-@include font-style(advertisment-content, white, 400, 20px);
+@include font-style(advertisment-content, white, 400, 18px);
 
 // advertisment section end
 
 // project section start
+
 .project-content {
   background-color: #2947a9;
   h6 {
     font-weight: 700;
     font-size: 20px;
+  }
+  p{
+    font-weight: 400;
+    font-size: 13px;
   }
 }
 .project-list > li {
@@ -185,6 +189,7 @@
   border-left: 2px solid #2947a9;
   color: #2947a9;
 }
+
 // project-section end
 
 // form section start
@@ -195,6 +200,12 @@
   max-width: 539px;
   text-align: center;
 }
+.form-feild{
+  width: 80%;
+  input,select {
+    height: 40px;
+  }
+}
 .dropdown {
   height: 32px;
 }
@@ -203,12 +214,6 @@ textarea,
 select {
   outline: none;
   padding-left: 5px;
-}
-textarea {
-  width: 200px;
-}
-.form-feild > div > input {
-  width: 200px;
 }
 // form section end
 
@@ -238,8 +243,17 @@ textarea {
   // hero section start
 
   @include font-style(hero-title, black, 600, 62px);
+  .hero-section-dialogbox {
+    position: absolute;
+  }
 
   // hero section end
+
+  // reputation section start
+
+  .reputation-card {
+    width: 65%;
+  }
 
   // experience section start
 
@@ -265,8 +279,8 @@ textarea {
   }
 
   .project-completed-image {
-    top: -50px;
-    left: -50px;
+    top: -40px;
+    left: -40px;
   }
 
   .handshake {
@@ -286,8 +300,8 @@ textarea {
   .experience-content > p {
     max-width: 280px;
   }
-  .experience-content > h3 {
-    font-size: 38px;
+  .experience-heading {
+    font-size: 38px !important;
   }
   // form-section start
 
@@ -296,23 +310,38 @@ textarea {
   .project-list > li {
     font-size: 22px;
   }
+  .circle{
+    height: 15px !important;
+    width: 15px !important;
+    background-color: #F6F8F7;
+  }
+  .blue-circle{
+    background-color: #2947a9;
+  }
+  .project-button {
+    height: 45px !important;
+  }
+  .project-content> p{
+    font-size: 18px;
+  }
 
   // project section end
 
   textarea {
     width: 420px;
   }
+  .form-feild{
+    width: 50%;
+  }
+  
 }
 
 // -------------------------------------------
 
 @media (min-width: 992px) {
   // hero section start
-  @include font-style(hero-title, black, 600, 72px);
 
-  .hero-section-dialogbox {
-    position: absolute;
-  }
+  @include font-style(hero-title, black, 600, 72px);
   .dialogbox-content {
     width: 350px;
   }
@@ -322,7 +351,7 @@ textarea {
   // reputation section start
 
   .reputation-card {
-    width: 25%;
+    max-width: 320px;
   }
   .sub-heading {
     font-size: 36px;
@@ -344,13 +373,16 @@ textarea {
     right: 0;
     transform: translateY(-50%);
   }
+  .about-us-section{
+    margin:100px auto !important;
+  }
 
   // about-us section end
 
   // experience section start
 
-  .experience-content > h3 {
-    font-size: 60px;
+  .experience-heading {
+    font-size: 58px !important;
   }
 
   // experience section end
@@ -365,4 +397,21 @@ textarea {
   }
 
   // advertisment section end
+
+  // project section start
+
+  .project-section{
+    margin: 60px 0 !important;
+  }
+  .circle{
+    height: 15px !important;
+    width: 15px !important;
+    background-color: #F6F8F7;
+  }
+  .blue-circle{
+    background-color: #2947a9;
+  }
+  .project-button {
+    height: 45px !important;
+  }
 }

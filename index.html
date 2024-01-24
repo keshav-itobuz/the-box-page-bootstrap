@@ -27,7 +27,7 @@
       <span class="navbar-toggler-icon"></span>
     </button>
     <div class="collapse navbar-collapse justify-content-end" id="navbarNavAltMarkup">
-      <ul class="navbar-nav">
+      <ul class="navbar-nav gap-4">
         <li class="nav-item">
           <a class="nav-link navbar-content" aria-current="page" href="#">Home</a>
         </li>
@@ -51,12 +51,13 @@
 
 <!-- hero section start -->
 
-<section class="hero-section d-flex flex-column gap-5 justify-content-center align-items-center align-items-lg-start">
-  <h1 class="hero-title ms-lg-5">
+<section
+  class="hero-section d-flex flex-column gap-5 justify-content-center align-items-center align-items-md-start position-relative ">
+  <h1 class="hero-title ms-md-5">
     Building things <br />
     is our mission.
   </h1>
-  <div class="hero-section-dialogbox pt-3 end-0 me-lg-5">
+  <div class="hero-section-dialogbox pt-3 end-0  me-md-5 bottom-0 ">
     <div class="dialogbox-content">
       <h6 class="dialogbox-title text-center">Feature Project</h6>
       <p class="px-3 dialogbox-content">
@@ -116,7 +117,7 @@
 
 <!-- about-us section start -->
 
-<section class="about-us-section d-flex flex-column flex-lg-row position-relative my-5 mx-auto  position-relative ">
+<section class="about-us-section d-flex flex-column flex-lg-row position-relative   position-relative ">
   <div class="about-image m-1 m-lg-0">
     <img src="images/about-us-section/owner.svg" alt="man" class="w-100 " />
   </div>
@@ -130,7 +131,7 @@
       We've matured into an industry leader and trusted resource for those
       seeking quality, innovation and reliability when building in the U.S.
     </p>
-    <button class="btn bg-light about-button rounded-1 my-3 my-lg-4">
+    <button class="btn bg-light about-button rounded-1 my-3 mt-lg-4">
       <b>More on Our History</b>
     </button>
   </div>
@@ -189,7 +190,7 @@
 <!-- experience section start -->
 
 <section class="experience-section mt-5 row m-0 pt-5">
-  <div class="col-10 col-md-4 mx-auto">
+  <div class="col-11 col-md-4 mx-auto">
     <div class="card border-0 happy-clients position-relative p-4 mb-3 mb-md-0">
       <h5>84</h5>
       <span>Happy Clients</span>
@@ -215,12 +216,12 @@
     </div>
   </div>
   <div class="col-10 col-md-4  my-5 mb-md-0 mx-auto mx-md-0 experience-content">
-    <h3>30 Years Experience</h3>
+    <h3 class="experience-heading">30 Years Experience</h3>
     <p class="py-4">
       Our company has been the leading provided construction services to
       clients throughout the USA since 1988
     </p>
-    <button class="btn text-light blue-button rounded-1 ">Contact Us</button>
+    <button class="btn text-light blue-button rounded-1 py-2 px-4">Contact Us</button>
   </div>
 </section>
 
@@ -240,7 +241,7 @@
     </p>
   </div>
   <div>
-    <button class="btn advertisment-button text-light border rounded-0">
+    <button class="btn advertisment-button text-light border rounded-0 p-md-3">
       Get your consultation
     </button>
   </div>
@@ -250,7 +251,7 @@
 
 <!-- project section start -->
 
-<section class="project-section row m-0 ">
+<section class="project-section row m-0">
   <h2 class="sub-heading ps-5 text-center text-lg-start my-3">Projects</h2>
   <div class="col-12 col-lg-4 ps-0 ps-md-5">
     <ul class="list-unstyled d-flex flex-row flex-lg-column gap-1 gap-lg-0 justify-content-center project-list">
@@ -262,33 +263,53 @@
   </div>
   <div class="col-12 col-lg-8 row m-0 pe-lg-5 justify-content-center   ">
 
-    <div class="card border-0  col-10 col-md-6 py-3">
+    <div class="card border-0  col-12 col-md-6 py-3">
       <img src="images/projects_section/wildstone.svg" alt="building" />
-      <div class="card-body project-content text-light">
+      <div class=" project-content text-light ps-3 pt-3">
         <h6>Wildstone Infra Hotel</h6>
         <p>2715 Ash Dr. San Jose, South Dakota</p>
       </div>
     </div>
-    <div class=" card border-0 col-10 col-md-6 py-3">
+    <div class=" card border-0 col-12 col-md-6 py-3">
       <img src="images/projects_section/stone-building.svg" alt="building" />
-      <div class="card-body project-content text-light">
+      <div class="project-content text-light ps-3 pt-3">
         <h6>Wish Stone Building</h6>
         <p>2972 Westheimer Rd. Santa Ana, Illinois</p>
       </div>
     </div>
-    <div class="card border-0 col-10 col-md-6 py-3">
+    <div class="card border-0 col-12 col-md-6 py-3">
       <img src="images/projects_section/parkinston.svg" alt="building" />
-      <div class="card-body project-content text-light ">
+      <div class="project-content text-light ps-3 pt-3">
         <h6>Mr. Parkinston's House</h6>
         <p>3517 W. Gray St. Utica, Pennsylvania</p>
       </div>
     </div>
-    <div class="card border-0 col-10 col-md-6 py-3">
+    <div class="card border-0 col-12 col-md-6 py-3">
       <img src="images/projects_section/oregano.svg" alt="building" />
-      <div class="card-body project-content text-light ">
+      <div class="project-content text-light ps-3 pt-3">
         <h6>Oregano Height</h6>
         <p>2464 Royal Ln. Mesa, New Jersey</p>
       </div>
+    </div>
+    <div class="col-12 row d-none d-md-flex ">
+      <button
+        class="col-4 btn bg-dark text-light border-end rounded-0 project-button d-flex justify-content-center gap-3 align-items-center">
+        <img src="./images/arrow/arrow-left-solid.svg" alt="left-arrow" class="h-100" />
+        Back
+      </button>
+      <div class="col-4 d-flex justify-content-around align-items-center">
+        
+      <div class="circle blue-circle rounded-circle"></div>
+      <div class="circle rounded-circle"></div>
+      <div class="circle rounded-circle"></div>
+      <div class="circle rounded-circle"></div>
+      <div class="circle rounded-circle"></div>
+      </div>
+      <button
+        class="col-4 btn bg-dark text-light border-start rounded-0 project-button d-flex justify-content-center gap-3 align-items-center">
+        Next
+        <img src="./images/arrow/arrow-right-solid.svg" alt="right-arrow" class="h-100" />
+      </button>
     </div>
 
   </div>
@@ -299,25 +320,25 @@
 <!-- form section start -->
 
 <section class="form-section d-flex flex-column align-items-center gap-3 my-5 py-5">
-  <h2 class="sub-heading">What can us do for you?</h2>
+  <h2 class="sub-heading text-center">What can us do for you?</h2>
   <p class="content text-dark form-content">
     We are ready to work on a project of any complexity, whether it's
     commercial or residential.
   </p>
   <form action="submit" class="form-feild d-flex flex-column gap-3 align-items-center ">
-    <div class="d-flex flex-column flex-md-row gap-3">
-      <input type="text" placeholder="Your Name" required />
-      <input type="email" placeholder="Email" required />
+    <div class="d-flex flex-column flex-md-row gap-3 w-100">
+      <input type="text" placeholder="Your Name" class="w-100" required/>
+      <input type="email" placeholder="Email" class="w-100" required />
     </div>
-    <div class="d-flex flex-column flex-md-row gap-3 ">
-      <select class="dropdown">
+    <div class="d-flex flex-column flex-md-row gap-3 w-100">
+      <select class="dropdown w-100">
         <option value="issue" disabled selected>Reason for contacting</option>
         <option value="one">website issue</option>
         <option value="two">payment issue issue</option>
       </select>
-      <input type="number" placeholder="Phone" />
+      <input type="number" placeholder="Phone" class="w-100"/>
     </div>
-    <textarea rows="5" placeholder="Message"></textarea>
+    <textarea rows="6" placeholder="Message" class="w-100"></textarea>
     <button class="btn blue-button text-light rounded-1">Submit</button>
   </form>
 </section>
@@ -364,7 +385,7 @@
 
 <!-- footer section start -->
 
-<section class="footer-text py-2">
+<section class="footer-text py-3">
   <footer class="container">
     TheBox Company © 2022. All Rights Reserved
   </footer>
