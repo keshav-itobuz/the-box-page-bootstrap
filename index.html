@@ -22,7 +22,7 @@
         <img src="images/logos/company.svg" alt="logo" width="38px" />
         <span class="navbar-logo"><i>The</i>Box</span>
       </a>
-      <button class="navbar-toggler border-0" type="button" data-bs-toggle="collapse"
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
         data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false"
         aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
@@ -90,21 +90,21 @@
     </h2>
     <section
       class="d-flex flex-column flex-lg-row justify-content-center gap-4 align-items-center">
-      <div class="border border-1 p-3 reputation-card">
+      <div class="border border-1 p-3 reputation-card rounded-1">
         <img src="images/reputation-section/headphone.svg" alt="headphone" />
         <h6 class="reputation-heading">Best Services</h6>
         <p class="reputation-content">
           Nullam senectus porttitor in eget. Eget rutrum leo interdum
         </p>
       </div>
-      <div class="border border-1 p-3 reputation-card">
+      <div class="border border-1 p-3 reputation-card rounded-1">
         <img src="images/reputation-section/headphone.svg" alt="headphone" />
         <h6 class="reputation-heading">Best Teams</h6>
         <p class="reputation-content">
           Cursus semper tellus volutpat aliquet lacus.
         </p>
       </div>
-      <div class="border border-1 p-3 reputation-card">
+      <div class="border border-1 p-3 reputation-card rounded-1">
         <img src="images/reputation-section/pencil.svg" alt="pencil" class="pb-2" />
         <h6 class="reputation-heading">Best Designs</h6>
         <p class="reputation-content">
@@ -120,7 +120,7 @@
 
   <section class="about-us-section d-flex flex-column flex-lg-row position-relative   position-relative ">
     <div class="about-image m-1 m-lg-0">
-      <img src="images/about-us-section/owner.svg" alt="man" class="w-100 " />
+      <img src="images/about-us-section/owner.svg" alt="man" class="w-100 rounded-1 " />
     </div>
     <div class="section-content p-4 m-1 rounded-1 ">
       <h2 class="sub-heading text-light my-3">About us</h2>
@@ -132,7 +132,7 @@
         We've matured into an industry leader and trusted resource for those
         seeking quality, innovation and reliability when building in the U.S.
       </p>
-      <button class="btn bg-light about-button rounded-1 my-3 mt-lg-4">
+      <button class="btn bg-light about-button rounded-1 my-3 mt-lg-4 py-2 px-4">
         <b>More on Our History</b>
       </button>
     </div>
@@ -147,37 +147,37 @@
     <div class="container text-center">
       <div class="row justify-content-center">
         <div class="col-12 col-md-6 col-lg-4 py-3 d-flex justify-content-center">
-          <div class="white-card py-5">
+          <div class="white-card py-5 rounded-1">
             <img src="images/service-section/construction.svg" alt="construction" class="pb-4" />
             <h6 class="mt-4 card-title">Construction</h6>
           </div>
         </div>
         <div class="col-12 col-md-6 col-lg-4 py-3 d-flex justify-content-center">
-          <div class="blue-card py-5">
+          <div class="blue-card py-5 rounded-1">
             <img src="images/service-section/renovation.svg" alt="renovation" class="pb-4" />
             <h6 class="mt-4 card-title">Renovation</h6>
           </div>
         </div>
         <div class="col-12 col-md-6 col-lg-4 py-3 d-flex justify-content-center">
-          <div class="white-card py-5">
+          <div class="white-card py-5 rounded-1">
             <img src="images/service-section/consultation.svg" alt="consultation" class="pb-4" />
             <h6 class="mt-4 card-title">Constultation</h6>
           </div>
         </div>
         <div class="col-12 col-md-6 col-lg-4 py-3 d-flex justify-content-center">
-          <div class="blue-card py-5">
+          <div class="blue-card py-5 rounded-1">
             <img src="images/service-section/repair.svg" alt="repair-services" class="pb-4" />
             <h6 class="mt-4 card-title">Repair-Service</h6>
           </div>
         </div>
         <div class="col-12 col-md-6 col-lg-4 py-3 d-flex justify-content-center">
-          <div class="white-card py-5">
+          <div class="white-card py-5 rounded-1">
             <img src="images/service-section/architecture.svg" alt="architecture" class="pb-4" />
             <h6 class="mt-4 card-title">Architecture</h6>
           </div>
         </div>
         <div class="col-12 col-md-6 col-lg-4 py-3 d-flex justify-content-center">
-          <div class="blue-card py-5">
+          <div class="blue-card py-5 rounded-1">
             <img src="images/service-section/electric.svg" alt="electric" class="pb-4" />
             <h6 class="mt-4 card-title" class="mt-4">Electric</h6>
           </div>
@@ -223,7 +223,7 @@
         Our company has been the leading provided construction services to
         clients throughout the USA since 1988
       </p>
-      <button class="btn text-light blue-button rounded-1 py-2 px-4">Contact Us</button>
+      <button class="btn text-light blue-button rounded-1 py-3 px-4">Contact Us</button>
     </div>
   </section>
 
@@ -328,19 +328,19 @@
     </p>
     <form action="submit" class="form-feild d-flex flex-column gap-3 align-items-center ">
       <div class="d-flex flex-column flex-md-row gap-3 w-100">
-        <input type="text" placeholder="Your Name" class="w-100" required />
-        <input type="email" placeholder="Email" class="w-100" required />
+        <input type="text" placeholder="Your Name*" class="w-100" required />
+        <input type="email" placeholder="Email*" class="w-100" required />
       </div>
       <div class="d-flex flex-column flex-md-row gap-3 w-100">
         <select class="dropdown w-100">
-          <option value="issue" disabled selected>Reason for contacting</option>
+          <option value="issue" disabled selected>Reason for contacting*</option>
           <option value="one">website issue</option>
           <option value="two">payment issue issue</option>
         </select>
         <input type="number" placeholder="Phone" class="w-100" />
       </div>
       <textarea rows="6" placeholder="Message" class="w-100"></textarea>
-      <button class="btn blue-button text-light rounded-1">Submit</button>
+      <button class="btn blue-button text-light rounded-1 py-2 px-5">Submit</button>
     </form>
   </section>
 

@@ -1,4 +1,4 @@
-@import url("https://fonts.googleapis.com/css2?family=Work+Sans:wght@400;600;700;800&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Work+Sans:wght@400;500;600;700;800&display=swap");
 * {
   font-family: "Work Sans", sans-serif !important;
   margin: 0;
@@ -145,8 +145,8 @@
 .experience-section span {
   font-weight: 400;
   font-size: 20px;
-  padding-left: 10px;
-  border-left: 3px solid #f9995d;
+  padding-left: 8px;
+  border-left: 5px solid #f9995d;
   margin-left: 10px;
 }
 
@@ -199,17 +199,17 @@
 }
 .project-content h6 {
   font-weight: 700;
-  font-size: 18px;
+  font-size: 17px;
 }
 .project-content p {
   font-weight: 400;
-  font-size: 13px;
+  font-size: 14px;
 }
 
 .project-list > li {
   color: #c2c7d6;
-  font-weight: bold;
   font-size: 16px;
+  font-weight: 500;
   padding-left: 10px;
   margin-bottom: 10px;
 }
@@ -219,8 +219,9 @@
 }
 
 #selected-project {
-  border-left: 2px solid #2947a9;
+  border-left: 4px solid #2947a9;
   color: #2947a9;
+  font-weight: 700;
 }
 
 .form-section {
@@ -235,7 +236,8 @@
 .form-feild {
   width: 80%;
 }
-.form-feild input, .form-feild select {
+.form-feild input,
+.form-feild select {
   height: 40px;
 }
 
@@ -320,16 +322,17 @@ select {
   .circle {
     height: 15px !important;
     width: 15px !important;
-    background-color: #F6F8F7;
+    background-color: #f6f8f7;
+  }
+  .circle:hover {
+    background-color: #2947a9;
+    cursor: pointer;
   }
   .blue-circle {
     background-color: #2947a9;
   }
   .project-button {
     height: 45px !important;
-  }
-  .project-content > p {
-    font-size: 17px;
   }
   textarea {
     width: 420px;
@@ -383,7 +386,7 @@ select {
   .circle {
     height: 15px !important;
     width: 15px !important;
-    background-color: #F6F8F7;
+    background-color: #f6f8f7;
   }
   .blue-circle {
     background-color: #2947a9;
